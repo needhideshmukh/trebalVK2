@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-top: 0;
+  font-family: Rubik, sans-serif;
+}
+
+:root {
+  --base-blue: #1338ae;
+  --blue2: #cddefd5c;
+  --backgroundWhite: #fcfbff;
+  --backgroundWhite2: #fff;
+}
+
+/*------------------------- header css start*/
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+
+.headerImage {
+  height: 700px;
+  width: 100%;
+  /* flex-shrink: 0; */
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(19, 56, 174, 0.04) 0%, #4d71e4 100%);
+}
+
+/* .headerImage:nth-child(0) {
+  aspect-ratio: 16/9;
+} */
+
+.headerText {
+  position: absolute;
+  color: #fff;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* left: 50%;
+  right: 50%; */
+  left: 20%;
+  /* transform: translateX(35%); */
+  top: calc(80% - 20px);
+}
+
+/*------------------------- header css end*/
+
+/*------------------------- Left form css start*/
+
+.formStatContainer {
+  display: flex;
+  /* width: 120%; */
+  /* flex-wrap: wrap; */
+  padding: 2% 4%;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 2%;
+  color: var(--backgroundWhite);
+}
+
+.formStatContainer > * {
+  width: 110%;
+}
+
+.leftContainer {
+  padding: 5%;
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  border-radius: 10px;
+  background: var(--blue2);
+  text-align: left;
+}
+
+.leftContainer h1 {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Rubik, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  text-justify: newspaper;
+  font-weight: 700;
+  line-height: 50px; /* 85.714% */
+}
+
+.leftContainer p {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-justify: newspaper;
+  margin-bottom: 10%;
+  line-height: 30px; /* 93.75% */
+}
+
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+
+.messageBox h6 {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0 0 1% 0;
+}
+
+.messageBox textarea {
+  height: 100px;
+  width: 90%;
+  box-sizing: border-box;
+  border: 2px solid var(--base-blue);
+  border-radius: 4px;
+  background-color: var(--blue2);
+  font-size: 16px;
+  resize: none;
+}
+
+.messageBox textarea:placeholder-shown {
+  color: rgba(0, 16, 24, 0.5);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 15px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+
+#DropdownCustom {
+  color: black;
+  text-align: left;
+  width: 90%;
+  border-radius: 4px;
+  border: 2px solid #1338aeb3;
+  background: #cddcf88a;
+  gap: 4px;
+}
+!important
+//
+
+.dropdownMenu {
+  color: black;
+  text-align: left;
+  width: 90%;
+  border-radius: 4px;
+  border: 2px solid #1338aeb3;
+  background: #cddcf88a;
+  gap: 4px;
+}
+
+.zipCode {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap !important;
+  color: black;
+  margin: 0 0 1% 0;
+}
+
+.zipCode textarea {
+  height: 48px;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2px solid var(--base-blue);
+  border-radius: 4px;
+  background-color: var(--blue2);
+  font-size: 16px;
+  resize: none;
+}
+
+.zipCode h6 {
+  color: black;
+}
+
+.zipCodeFinder {
+  color: #1338ae;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.zipcodeFiner_Here {
+  color: #1338ae;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.submitButton {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 2px solid rgba(205, 220, 248, 0.54);
+  background: #1338ae;
+  display: flex;
+  height: 60px;
+  padding: 20px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.34px;
+}
+
+.noteThis {
+  color: var(--base-blue);
+  margin-top: 10%;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+/*------------------------- Left form css end*/
+
+/*------------------------- Right announcements css start*/
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+}
+
+.announcements {
+  /* background-color: var(--backgroundWhite2); */
+  background-color: var(--backgroundWhite2);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+
+.announcements h5 {
+  color: var(--base-blue);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.announcements p {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+
+.announcementContent {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 30px !important; /* 93.75% */
+}
+
+.boldImpInfo {
+  color: var(--base-blue);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+}
+
+.linkUnderline {
+  /* text-decoration: 2px underline; */
+  color: #1338ae;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 76.563% */
+  text-decoration-line: underline;
+}
+
+.NolinkUnderline {
+  text-decoration: none;
+}
+
+.progressReport {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+/*------------------------- Right announcements css end*/
